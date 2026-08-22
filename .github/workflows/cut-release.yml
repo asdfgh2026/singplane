@@ -1,0 +1,55 @@
+name: Cut release
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: "How to bump from the latest v* tag"
+        required: true
+        default: patch
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+concurrency:
+  group: cut-release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    name: Tag next version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Create and push tag
+        env:
+          BUMP: ${{ inputs.bump }}
+        run: |
+          set -euo pipefail
+          chmod +x scripts/release.sh
+          last="$(git tag -l 'v[0-9]*' --sort=-v:refname | head -1)"
+          if [[ -n "$last" && "$(git rev-list -n 1 "$last")" == "$(git rev-parse HEAD)" ]]; then
+            echo "HEAD is already $last. Code did not change."
+            echo "Re-run the failed Build & Release job instead of cutting a new version."
+            exit 1
+          fi
+          ver="$(./scripts/release.sh --print "$BUMP")"
+          if git rev-parse -q --verify "refs/tags/v${ver}" >/dev/null; then
+            echo "tag v${ver} already exists" >&2
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${ver}" -m "SingPanel ${ver}"
+          git push origin "v${ver}"
+          echo "Created v${ver}"

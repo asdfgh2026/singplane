@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SingPanel</string>
+    <!-- AppDest -->
+    <string name="tab_home">首頁</string>
+    <string name="tab_proxies">代理</string>
+    <string name="tab_connections">連線</string>
+    <string name="tab_profiles">設定檔</string>
+    <string name="tab_templates">範本</string>
+    <string name="tab_logs">日誌</string>
+    <string name="tab_settings">設定</string>
+
+    <!-- SkeletonPage -->
+    <string name="skeleton_page">佔位頁面</string>
+
+    <!-- ProxiesPage -->
+    <string name="proxies_search_placeholder">搜尋代理節點...</string>
+    <string name="proxies_search_desc">搜尋</string>
+    <string name="proxies_refresh_desc">重新整理</string>
+    <string name="proxies_core_not_running">核心未運行，請在首頁啟動服務後查看並測試代理節點。</string>
+    <string name="proxies_no_groups">暫未取得代理群組，請確保設定檔中包含 Clash API 且節點可用。</string>
+    <string name="proxies_group_node_count">%1$s · %2$d 節點</string>
+    <string name="proxies_speed_testing">測速中...</string>
+    <string name="proxies_speed_test_all">一鍵測速</string>
+    <string name="proxies_current_selected">目前選取</string>
+    <string name="proxies_timeout">逾時</string>
+    
+    <!-- HomePage -->
+    <string name="home_core_not_configured">未設定核心</string>
+    <string name="home_status_running">運行中</string>
+    <string name="home_status_stopped">已停止</string>
+    <string name="home_current_profile">目前設定: %1$s</string>
+    <string name="home_action_stop">停止</string>
+    <string name="home_action_start">啟動</string>
+    <string name="home_mode_rule">規則模式</string>
+    <string name="home_mode_global">全域代理</string>
+    <string name="home_mode_direct">直接連線</string>
+    <string name="home_uptime">運行時間</string>
+    <string name="home_core_memory">核心記憶體</string>
+    <string name="home_lan_ip">區域網路 IP</string>
+    <string name="home_outbound_network_check">出口網路檢測</string>
+    <string name="home_mask_ip_desc">遮罩 IP</string>
+    <string name="home_refresh_desc">重新整理</string>
+    <string name="home_outbound_ip">出口 IP</string>
+    <string name="home_ip_detecting">正在檢測...</string>
+    <string name="home_ip_tap_to_detect">點擊重新整理檢測</string>
+    <string name="home_detect_source">檢測來源</string>
+    <string name="home_mixed_port">mixed 連接埠</string>
+    <string name="home_clash_controller">Clash 控制器</string>
+    <string name="home_core_program">核心程式</string>
+    
+    <!-- TemplatesPage -->
+    <string name="templates_custom_name">自訂範本</string>
+    <string name="templates_custom_desc">使用者自訂設定檔範本</string>
+    <string name="templates_new_desc">建立範本</string>
+    <string name="templates_type_builtin">內建唯讀</string>
+    <string name="templates_type_custom">自訂</string>
+    <string name="templates_action_view_json">檢視 JSON</string>
+    <string name="templates_action_edit">編輯</string>
+    <string name="templates_action_delete_desc">刪除範本</string>
+    <string name="templates_title_view">檢視範本: %1$s</string>
+    <string name="templates_title_new">建立範本</string>
+    <string name="templates_title_edit">編輯範本</string>
+    <string name="templates_field_name">範本名稱</string>
+    <string name="templates_field_desc">描述</string>
+    <string name="templates_field_json">範本 JSON</string>
+    <string name="templates_unnamed">未命名範本</string>
+    <string name="templates_json_invalid">JSON 格式無效: %1$s</string>
+    <string name="templates_action_save">儲存</string>
+    <string name="templates_action_close">關閉</string>
+    <string name="templates_action_cancel">取消</string>
+    
+    <!-- ConnectionsPage -->
+    <string name="connections_title">連線</string>
+    <string name="connections_body">活躍連線列表。即時查看與管理網路連線。</string>
+    
+    <!-- SettingsPage -->
+    <string name="settings_core_management">官方核心管理</string>
+    <string name="settings_release_channel">發布通道:</string>
+    <string name="settings_channel_beta">測試版 (Beta)</string>
+    <string name="settings_channel_stable">正式版 (Stable)</string>
+    <string name="settings_github_proxy">GitHub 加速代理:</string>
+    <string name="proxy_direct">直連</string>
+    <string name="proxy_fast_1">加速 1</string>
+    <string name="proxy_fast_2">加速 2</string>
+    <string name="proxy_fast_3">加速 3</string>
+    <string name="settings_proxy_url_prefix">代理 URL 前綴 (留空直連)</string>
+    <string name="settings_core_executable_path">核心執行檔路徑</string>
+    <string name="settings_download_preparing">準備下載...</string>
+    <string name="settings_download_success">下載並安裝完成！</string>
+    <string name="settings_download_failed">下載失敗: %1$s</string>
+    <string name="settings_download_match_core">下載相符核心</string>
+    <string name="settings_download_redownload">重新下載官方核心</string>
+    <string name="settings_network_ports">網路與連接埠</string>
+    <string name="settings_mixed_inbound_port">mixed 入站連接埠</string>
+    <string name="settings_clash_api_port">Clash API 連接埠</string>
+    <string name="settings_strip_tun_on_assemble">啟動時移除 TUN inbound</string>
+    <string name="settings_strip_tun_on_assemble_desc">僅使用本地代理端口時開啟（無需系統 VPN 授權）</string>
+    <string name="settings_force_app_ports">強制使用上方連接埠</string>
+    <string name="settings_force_app_ports_desc">啟動時自動覆蓋設定檔中的監聽連接埠</string>
+    <string name="settings_appearance_theme">外觀與主題</string>
+    <string name="settings_theme_mode">主題模式:</string>
+    <string name="settings_theme_system">跟隨系統</string>
+    <string name="settings_theme_light">淺色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_language">應用語言</string>
+    <string name="settings_language_mode">語言:</string>
+    <string name="settings_lang_system">跟隨系統</string>
+    <string name="settings_lang_zh_hans">簡體中文</string>
+    <string name="settings_lang_zh_hant">繁體中文</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_tailscale_title">Tailscale (官方核心 ≥1.13)</string>
+    <string name="settings_ts_enable">啟用 Tailscale</string>
+    <string name="settings_ts_enable_desc">啟動時動態注入 Tailscale endpoint、DNS 與路由規則</string>
+    <string name="settings_ts_auth_key">Auth Key (留空使用網頁登入)</string>
+    <string name="settings_ts_hostname">裝置名稱 Hostname (留空預設)</string>
+    <string name="settings_ts_accept_routes">接受子網路由 (Accept Routes)</string>
+    <string name="settings_ts_inject_dns">注入 Tailscale DNS</string>
+    <string name="settings_ts_preferred_route">優先使用路由規則 (Preferred Route)</string>
+    <string name="settings_ts_replace_other">取代原有 Tailscale 設定</string>
+    <string name="home_tailscale_title">Tailscale</string>
+    <string name="home_tailscale_copy_login">複製登入連結</string>
+    <string name="home_tailscale_open_login">開啟登入頁面</string>
+    <string name="home_tailscale_copy_ip">複製 IP</string>
+    <string name="settings_tools_title">進階工具</string>
+    <string name="settings_templates_desc">查看與管理節點裝配模板</string>
+    <string name="settings_logs_desc">即時核心日誌與運行排查</string>
+    <string name="settings_about_title">關於 SingPanel</string>
+    <string name="settings_about_desc">版本資訊與致謝開源專案</string>
+    <string name="settings_disclaimer_title">免責聲明與使用者協議</string>
+    <string name="settings_disclaimer_desc">查看軟體使用條款與免責聲明</string>
+    <string name="about_app_desc">SingPanel 是用於控制 sing-box 的跨平台客戶端。介面交互參考 FlClash，資料面由官方 SagerNet/sing-box 驅動。</string>
+    <string name="about_open_source_projects">致謝與參考開源專案</string>
+    <string name="about_version">版本: %1$s</string>
+    <string name="back">返回</string>
+    <string name="settings_disclaimer">SingPanel 是官方 SagerNet/sing-box 的跨平台客戶端。</string>
+    
+    <!-- LogsPage -->
+    <string name="logs_clear_desc">清空日誌</string>
+    <string name="logs_empty">還沒有日誌。</string>
+    
+    <!-- ProfilesPage -->
+    <string name="profiles_import_url">匯入訂閱 URL</string>
+    <string name="profiles_paste_json">貼上 JSON</string>
+    <string name="profiles_empty_title">還沒有設定檔</string>
+    <string name="profiles_empty_desc">匯入一份 sing-box JSON，或從 URL 獲取訂閱並自動裝配為可運行設定檔。</string>
+    <string name="profiles_tag_current">目前使用中</string>
+    <string name="profiles_tag_subscription">訂閱</string>
+    <string name="profiles_tag_local">本機</string>
+    <string name="profiles_tag_assembled">已裝配範本</string>
+    <string name="profiles_tag_runnable">可運行</string>
+    <string name="profiles_tag_unrunnable">不可運行</string>
+    <string name="profiles_traffic">流量: %1$s</string>
+    <string name="profiles_expiry">到期: %1$s</string>
+    <string name="profiles_action_select">選用</string>
+    <string name="profiles_action_view">查看設定</string>
+    <string name="profiles_view_title">查看設定: %1$s</string>
+    <string name="profiles_view_empty">（空設定）</string>
+    <string name="profiles_action_copy">複製</string>
+    <string name="profiles_action_refresh">重新整理</string>
+    <string name="profiles_action_delete_desc">刪除設定檔</string>
+    <string name="profiles_field_name_optional">設定檔名稱（可選）</string>
+    <string name="profiles_field_sub_url">訂閱 URL</string>
+    <string name="profiles_assemble_with_template">使用範本自動裝配</string>
+    <string name="profiles_field_assemble_template">裝配範本</string>
+    <string name="profiles_action_import">匯入</string>
+    <string name="profiles_action_cancel">取消</string>
+    <string name="profiles_title_paste_json">貼上 sing-box JSON</string>
+    <string name="profiles_field_name">設定檔名稱</string>
+    <string name="profiles_field_json_content">JSON 內容</string>
+
+    <!-- VPN Notification -->
+    <string name="vpn_notification_channel">VPN 運行狀態</string>
+    <string name="vpn_notification_title">SingPanel VPN 運行中</string>
+    <string name="vpn_notification_text">點擊回到應用程式</string>
+
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">免責聲明</string>
+    <string name="disclaimer_text">本軟體為開源免費軟體，僅供學習交流等非商業性質的個人測試使用，代理服務商的行為均與本軟體無關，同意聲明代表您已完全知曉並確認了這一點，如不同意，請選擇結束！</string>
+    <string name="disclaimer_agree">同意並繼續</string>
+    <string name="disclaimer_exit">結束應用程式</string>
+
+    <!-- ConnectionsPage Extra -->
+    <string name="connections_search_placeholder">搜尋主機 / 節點...</string>
+    <string name="connections_search_desc">搜尋</string>
+    <string name="connections_refresh_desc">重新整理</string>
+    <string name="connections_active_count">%1$d 個活動連線</string>
+    <string name="connections_total_traffic">累計: ↑ %1$s · ↓ %2$s</string>
+    <string name="connections_close_all">關閉全部</string>
+    <string name="connections_not_running">核心未運行，啟動服務後即可即時查看與管理網路連線。</string>
+    <string name="connections_no_match">沒有找到相符的連線。</string>
+    <string name="connections_empty">目前暫無活動網路連線。</string>
+    <string name="connections_disconnect_desc">中斷連線</string>
+    <string name="connections_used_traffic">已用 ↑ %1$s / ↓ %2$s</string>
+
+    <!-- LogsPage Extra -->
+    <string name="logs_level_all">全部</string>
+    <string name="logs_search_placeholder">搜尋日誌關鍵字...</string>
+    <string name="logs_autoscroll_pause">暫停自動滾動</string>
+    <string name="logs_autoscroll_resume">啟用自動滾動</string>
+
+    <!-- Settings Auto Update -->
+    <string name="settings_auto_update_sub">訂閱自動更新</string>
+    <string name="settings_auto_update_sub_desc">按設定週期在背景自動更新遠端訂閱並自動裝配</string>
+    <string name="interval_off">關閉</string>
+    <string name="interval_15m">15分鐘</string>
+    <string name="interval_1h">1小時</string>
+    <string name="interval_6h">6小時</string>
+    <string name="interval_12h">12小時</string>
+    <string name="interval_24h">24小時</string>
+
+    <!-- NetDetect Source Labels -->
+    <string name="source_auto">自動</string>
+    <string name="source_international">國際 (Cloudflare)</string>
+    <string name="source_domestic">國內 (CN 節點)</string>
+
+    <!-- Proxies Sort -->
+    <string name="proxies_sort_default">預設排序</string>
+    <string name="proxies_sort_latency">延遲優先</string>
+    <string name="proxies_sort_name">名稱排序</string>
+
+    <!-- Connections Sort -->
+    <string name="connections_sort_default">預設排序</string>
+    <string name="connections_sort_speed">速度優先</string>
+    <string name="connections_sort_traffic">流量優先</string>
+
+    <!-- Log Levels -->
+    <string name="logs_level_debug">DEBUG</string>
+    <string name="logs_level_info">INFO</string>
+    <string name="logs_level_warn">WARN</string>
+    <string name="logs_level_error">ERROR</string>
+</resources>

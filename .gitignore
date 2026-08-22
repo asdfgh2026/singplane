@@ -1,0 +1,60 @@
+# Local tooling
+.dart_tool/
+.packages
+.flutter-plugins-dependencies
+build/
+coverage/
+*.iml
+.idea/
+.vscode/
+
+# Runtime / local debug
+*.log
+dist/
+screenshots/
+downloads/
+
+# Local reference clones (not part of the product)
+ref/
+.build-cache/
+
+
+# Sing-box binary
+sing-box
+sing-box.exe
+core/sing-box*
+
+# Convert sidecar build output
+core/convert/singpanel-convert
+core/convert/singpanel-convert.exe
+core/convert/conv_out.txt
+core/convert/conv_err.txt
+
+# Helper service
+core/helper/target/
+core/helper/singpanel-helper
+core/helper/singpanel-helper.exe
+
+# Rust control-plane host
+core/host/target/
+core/host/singpanel-host
+core/host/singpanel-host.exe
+
+# GPUI Component desktop shell
+desktop/target/
+
+# Local AppData test directory & artifacts
+/SingPanel/
+android/app/libs/
+
+*.aar
+*.jar
+*.png
+!mobile/app/src/main/res/**/*.png
+!desktop/assets/**/*.png
+!assets/**/*.png
+
+# OS
+.DS_Store
+Thumbs.db
+.pi-subagents/

@@ -1,0 +1,28 @@
+[package]
+name = "singpanel-gpui"
+version = "0.0.1"
+edition = "2021"
+description = "GPUI Component shell for SingPanel. Talks to singpanel-host only."
+publish = false
+
+[dependencies]
+gpui = { git = "https://github.com/zed-industries/zed" }
+gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit", "x11", "wayland"] }
+gpui-component = { git = "https://github.com/longbridge/gpui-component" }
+gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
+anyhow = "1"
+rust-embed = { version = "8", features = ["include-exclude"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+cocoa = "0.26"
+objc = "0.2"
+
+[build-dependencies]
+winres = "0.1"
+
+[profile.dev]
+# GPUI is heavy in debug; keep the shell usable while iterating.
+opt-level = 1

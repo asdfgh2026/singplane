@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SingPanel</string>
+    <!-- AppDest -->
+    <string name="tab_home">Home</string>
+    <string name="tab_proxies">Proxies</string>
+    <string name="tab_connections">Connections</string>
+    <string name="tab_profiles">Profiles</string>
+    <string name="tab_templates">Templates</string>
+    <string name="tab_logs">Logs</string>
+    <string name="tab_settings">Settings</string>
+
+    
+    <!-- SkeletonPage -->
+    <string name="skeleton_page">Placeholder Page</string>
+
+    <!-- ProxiesPage -->
+    <string name="proxies_search_placeholder">Search proxies...</string>
+    <string name="proxies_search_desc">Search</string>
+    <string name="proxies_refresh_desc">Refresh</string>
+    <string name="proxies_core_not_running">Core is not running. Please start the service on Home page to view and test proxies.</string>
+    <string name="proxies_no_groups">No proxy groups found. Ensure your profile has Clash API enabled and nodes are available.</string>
+    <string name="proxies_group_node_count">%1$s · %2$d nodes</string>
+    <string name="proxies_speed_testing">Testing...</string>
+    <string name="proxies_speed_test_all">Speed Test</string>
+    <string name="proxies_current_selected">Selected</string>
+    <string name="proxies_timeout">Timeout</string>
+    
+    <!-- HomePage -->
+    <string name="home_core_not_configured">No Core Configured</string>
+    <string name="home_status_running">Running</string>
+    <string name="home_status_stopped">Stopped</string>
+    <string name="home_current_profile">Current Profile: %1$s</string>
+    <string name="home_action_stop">Stop</string>
+    <string name="home_action_start">Start</string>
+    <string name="home_mode_rule">Rule</string>
+    <string name="home_mode_global">Global</string>
+    <string name="home_mode_direct">Direct</string>
+    <string name="home_uptime">Uptime</string>
+    <string name="home_core_memory">Memory</string>
+    <string name="home_lan_ip">LAN IP</string>
+    <string name="home_outbound_network_check">Outbound Check</string>
+    <string name="home_mask_ip_desc">Mask IP</string>
+    <string name="home_refresh_desc">Refresh</string>
+    <string name="home_outbound_ip">Outbound IP</string>
+    <string name="home_ip_detecting">Detecting...</string>
+    <string name="home_ip_tap_to_detect">Tap to refresh</string>
+    <string name="home_detect_source">Source</string>
+    <string name="home_mixed_port">Mixed Port</string>
+    <string name="home_clash_controller">Clash Controller</string>
+    <string name="home_core_program">Core Executable</string>
+    
+    <!-- TemplatesPage -->
+    <string name="templates_custom_name">Custom Template</string>
+    <string name="templates_custom_desc">User Custom Template</string>
+    <string name="templates_new_desc">New Template</string>
+    <string name="templates_type_builtin">Built-in (Read-only)</string>
+    <string name="templates_type_custom">Custom</string>
+    <string name="templates_action_view_json">View JSON</string>
+    <string name="templates_action_edit">Edit</string>
+    <string name="templates_action_delete_desc">Delete Template</string>
+    <string name="templates_title_view">View Template: %1$s</string>
+    <string name="templates_title_new">New Template</string>
+    <string name="templates_title_edit">Edit Template</string>
+    <string name="templates_field_name">Name</string>
+    <string name="templates_field_desc">Description</string>
+    <string name="templates_field_json">Template JSON</string>
+    <string name="templates_unnamed">Unnamed Template</string>
+    <string name="templates_json_invalid">Invalid JSON: %1$s</string>
+    <string name="templates_action_save">Save</string>
+    <string name="templates_action_close">Close</string>
+    <string name="templates_action_cancel">Cancel</string>
+    
+    <!-- ConnectionsPage -->
+    <string name="connections_title">Connections</string>
+    <string name="connections_body">Active connections list. Monitor active proxy traffic and real-time connections.</string>
+    
+    <!-- SettingsPage -->
+    <string name="settings_core_management">Core Management</string>
+    <string name="settings_release_channel">Channel:</string>
+    <string name="settings_channel_beta">Beta</string>
+    <string name="settings_channel_stable">Stable</string>
+    <string name="settings_github_proxy">GitHub Acceleration Proxy:</string>
+    <string name="proxy_direct">Direct</string>
+    <string name="proxy_fast_1">Fast 1</string>
+    <string name="proxy_fast_2">Fast 2</string>
+    <string name="proxy_fast_3">Fast 3</string>
+    <string name="settings_proxy_url_prefix">Proxy URL Prefix (blank for direct)</string>
+    <string name="settings_core_executable_path">Core Executable Path</string>
+    <string name="settings_download_preparing">Preparing...</string>
+    <string name="settings_download_success">Downloaded &amp; Installed!</string>
+    <string name="settings_download_failed">Download failed: %1$s</string>
+    <string name="settings_download_match_core">Download Core</string>
+    <string name="settings_download_redownload">Redownload Core</string>
+    <string name="settings_network_ports">Network &amp; Ports</string>
+    <string name="settings_mixed_inbound_port">Mixed Inbound Port</string>
+    <string name="settings_clash_api_port">Clash API Port</string>
+    <string name="settings_strip_tun_on_assemble">Strip TUN inbound on startup</string>
+    <string name="settings_strip_tun_on_assemble_desc">Enable when running purely as a local proxy without system VPN permission</string>
+    <string name="settings_force_app_ports">Force use of ports above</string>
+    <string name="settings_force_app_ports_desc">Override listening ports in configuration automatically on startup</string>
+    <string name="settings_appearance_theme">Appearance &amp; Theme</string>
+    <string name="settings_theme_mode">Theme Mode:</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_mode">Language:</string>
+    <string name="settings_lang_system">System</string>
+    <string name="settings_lang_zh_hans">简体中文</string>
+    <string name="settings_lang_zh_hant">繁體中文</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_tailscale_title">Tailscale (Official Core ≥1.13)</string>
+    <string name="settings_ts_enable">Enable Tailscale</string>
+    <string name="settings_ts_enable_desc">Dynamically inject Tailscale endpoint, DNS and routing rules at start</string>
+    <string name="settings_ts_auth_key">Auth Key (leave empty for web login)</string>
+    <string name="settings_ts_hostname">Device Hostname (leave empty for default)</string>
+    <string name="settings_ts_accept_routes">Accept Subnet Routes</string>
+    <string name="settings_ts_inject_dns">Inject Tailscale DNS</string>
+    <string name="settings_ts_preferred_route">Use Preferred Route Rules</string>
+    <string name="settings_ts_replace_other">Replace Existing Tailscale Config</string>
+    <string name="home_tailscale_title">Tailscale</string>
+    <string name="home_tailscale_copy_login">Copy Login Link</string>
+    <string name="home_tailscale_open_login">Open Login Page</string>
+    <string name="home_tailscale_copy_ip">Copy IP</string>
+    <string name="settings_tools_title">Advanced Tools</string>
+    <string name="settings_templates_desc">View and manage profile assembly templates</string>
+    <string name="settings_logs_desc">Real-time core logs and troubleshooting</string>
+    <string name="settings_about_title">About SingPanel</string>
+    <string name="settings_about_desc">Version info &amp; open source acknowledgements</string>
+    <string name="settings_disclaimer_title">Disclaimer &amp; Terms</string>
+    <string name="settings_disclaimer_desc">View software terms of use and disclaimer</string>
+    <string name="about_app_desc">SingPanel is a cross-platform client for controlling sing-box. UI and interaction follow FlClash; the data plane is official SagerNet/sing-box.</string>
+    <string name="about_open_source_projects">Open Source Acknowledgements</string>
+    <string name="about_version">Version: %1$s</string>
+    <string name="back">Back</string>
+    <string name="settings_disclaimer">SingPanel is a cross-platform client for official SagerNet/sing-box.</string>
+
+    
+    <!-- LogsPage -->
+    <string name="logs_clear_desc">Clear Logs</string>
+    <string name="logs_empty">No logs yet.</string>
+    
+    <!-- ProfilesPage -->
+    <string name="profiles_import_url">Import URL</string>
+    <string name="profiles_paste_json">Paste JSON</string>
+    <string name="profiles_empty_title">No profiles yet</string>
+    <string name="profiles_empty_desc">Import a sing-box JSON or fetch a subscription URL to assemble a runnable profile.</string>
+    <string name="profiles_tag_current">In Use</string>
+    <string name="profiles_tag_subscription">Sub</string>
+    <string name="profiles_tag_local">Local</string>
+    <string name="profiles_tag_assembled">Assembled</string>
+    <string name="profiles_tag_runnable">Runnable</string>
+    <string name="profiles_tag_unrunnable">Not Runnable</string>
+    <string name="profiles_traffic">Traffic: %1$s</string>
+    <string name="profiles_expiry">Expires: %1$s</string>
+    <string name="profiles_action_select">Select</string>
+    <string name="profiles_action_view">View Config</string>
+    <string name="profiles_view_title">View Config: %1$s</string>
+    <string name="profiles_view_empty">(empty config)</string>
+    <string name="profiles_action_copy">Copy</string>
+    <string name="profiles_action_refresh">Refresh</string>
+    <string name="profiles_action_delete_desc">Delete Profile</string>
+    <string name="profiles_field_name_optional">Profile Name (Optional)</string>
+    <string name="profiles_field_sub_url">Subscription URL</string>
+    <string name="profiles_assemble_with_template">Assemble with Template</string>
+    <string name="profiles_field_assemble_template">Template</string>
+    <string name="profiles_action_import">Import</string>
+    <string name="profiles_action_cancel">Cancel</string>
+    <string name="profiles_title_paste_json">Paste sing-box JSON</string>
+    <string name="profiles_field_name">Profile Name</string>
+    <string name="profiles_field_json_content">JSON Content</string>
+
+    <!-- VPN Notification -->
+    <string name="vpn_notification_channel">VPN Status</string>
+    <string name="vpn_notification_title">SingPanel VPN Running</string>
+    <string name="vpn_notification_text">Tap to open app</string>
+
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_text">This software is free and open-source, intended only for learning, communication and non-commercial personal testing. Actions of proxy providers are unrelated to this software. Agreeing means you acknowledge and confirm this. If you do not agree, please exit!</string>
+    <string name="disclaimer_agree">Agree and Continue</string>
+    <string name="disclaimer_exit">Exit App</string>
+
+    <!-- ConnectionsPage Extra -->
+    <string name="connections_search_placeholder">Search host / node...</string>
+    <string name="connections_search_desc">Search</string>
+    <string name="connections_refresh_desc">Refresh</string>
+    <string name="connections_active_count">%1$d active connections</string>
+    <string name="connections_total_traffic">Total: ↑ %1$s · ↓ %2$s</string>
+    <string name="connections_close_all">Close All</string>
+    <string name="connections_not_running">Core is not running. Start the service to view and manage active network connections.</string>
+    <string name="connections_no_match">No matching connections found.</string>
+    <string name="connections_empty">No active network connections.</string>
+    <string name="connections_disconnect_desc">Disconnect</string>
+    <string name="connections_used_traffic">Used ↑ %1$s / ↓ %2$s</string>
+
+    <!-- LogsPage Extra -->
+    <string name="logs_level_all">ALL</string>
+    <string name="logs_search_placeholder">Search log keywords...</string>
+    <string name="logs_autoscroll_pause">Pause Autoscroll</string>
+    <string name="logs_autoscroll_resume">Resume Autoscroll</string>
+
+    <!-- Settings Auto Update -->
+    <string name="settings_auto_update_sub">Subscription Auto Update</string>
+    <string name="settings_auto_update_sub_desc">Periodically update remote subscriptions in background and auto-assemble</string>
+    <string name="interval_off">Off</string>
+    <string name="interval_15m">15 min</string>
+    <string name="interval_1h">1 hour</string>
+    <string name="interval_6h">6 hours</string>
+    <string name="interval_12h">12 hours</string>
+    <string name="interval_24h">24 hours</string>
+
+    <!-- NetDetect Source Labels -->
+    <string name="source_auto">Auto</string>
+    <string name="source_international">Global (Cloudflare)</string>
+    <string name="source_domestic">Domestic (CN Node)</string>
+
+    <!-- Proxies Sort -->
+    <string name="proxies_sort_default">Default</string>
+    <string name="proxies_sort_latency">Latency</string>
+    <string name="proxies_sort_name">Name</string>
+
+    <!-- Connections Sort -->
+    <string name="connections_sort_default">Default</string>
+    <string name="connections_sort_speed">Speed</string>
+    <string name="connections_sort_traffic">Traffic</string>
+
+    <!-- Log Levels -->
+    <string name="logs_level_debug">DEBUG</string>
+    <string name="logs_level_info">INFO</string>
+    <string name="logs_level_warn">WARN</string>
+    <string name="logs_level_error">ERROR</string>
+</resources>

@@ -1,0 +1,11 @@
+#!/bin/bash
+# GPUI shell launcher. Keeps existing repo AppData so TUN / profiles stay put.
+set -euo pipefail
+DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT="${SINGPANEL_APPDATA:-/Volumes/SSD/dev/singplane}"
+export SINGPANEL_HOST="${SINGPANEL_HOST:-$DIR/singpanel-host}"
+export APPDATA="$ROOT"
+if [ -d "$ROOT" ]; then
+  cd "$ROOT"
+fi
+exec "$DIR/singpanel-gpui"
